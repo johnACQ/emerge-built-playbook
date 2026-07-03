@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emerge Built · Residential Growth Playbook · Apex ACQ</title>
+<link rel="stylesheet" href="apex-forest.css">
+<style>
+  /* ---- playbook-specific ---- */
+  .hero{padding:70px 0 46px;border-bottom:1px solid var(--line);}
+  .hero h1{font-family:'Anton','Arial Narrow',sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;letter-spacing:.005em;font-size:74px;margin:18px 0 20px;}
+  .hero h1 .aq{color:var(--aqua);}
+  .hero .sub{font-size:19px;color:var(--dim);max-width:760px;line-height:1.5;}
+  .hero .who{margin-top:26px;font-size:13px;color:var(--dim2);letter-spacing:.04em;}
+  .hero .who b{color:#cfd7dc;}
+
+  .secnum{font-family:'Anton',sans-serif;font-size:15px;color:var(--aqua);letter-spacing:.06em;}
+  .sechead{display:flex;align-items:baseline;gap:16px;margin-bottom:6px;}
+  .sechead h2{font-family:'Anton','Arial Narrow',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;font-size:40px;line-height:.95;}
+  section{border-bottom:1px solid var(--line);}
+  .lede{font-size:16.5px;color:var(--dim);max-width:820px;line-height:1.55;margin:14px 0 26px;}
+  .lede b{color:#eef3f6;font-weight:700;}
+  p{color:#c4ced6;}
+  p b{color:#eef3f6;}
+  h3{color:#fff;}
+  h4{color:#fff;font-size:15px;margin-bottom:8px;}
+  .ref{font-size:10px;color:var(--aqua-d);vertical-align:super;font-weight:800;margin-left:1px;}
+  .statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:8px 0 8px;}
+  @media(max-width:820px){.statgrid{grid-template-columns:1fr 1fr;}.hero h1{font-size:44px;}.sechead h2{font-size:30px;}}
+  .bignum{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;}
+  .bignum .v{font-family:'Anton',sans-serif;font-size:42px;line-height:.95;color:#fff;}
+  .bignum .v small{color:var(--aqua);font-size:24px;}
+  .bignum .l{font-size:12.5px;color:var(--dim);margin-top:8px;line-height:1.35;}
+  .tl{list-style:none;margin:14px 0;}
+  .tl li{position:relative;padding-left:26px;margin-bottom:16px;border-left:2px solid var(--line);padding-bottom:4px;margin-left:6px;}
+  .tl li::before{content:"";position:absolute;left:-7px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--aqua);}
+  .tl li b{color:#fff;display:block;font-size:15px;margin-bottom:3px;}
+  .copybank{background:#0e1519;border:1px solid var(--line);border-radius:12px;padding:6px 20px;}
+  .copybank .h{font-size:14px;font-weight:800;color:var(--aqua);border-bottom:1px solid var(--line);padding:14px 0 10px;margin-bottom:10px;}
+  .copybank .line{padding:9px 0;border-bottom:1px solid #171d24;font-size:14.5px;color:#dfe7ec;}
+  .copybank .line:last-child{border-bottom:none;}
+  .copybank .line span{color:var(--dim2);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:2px;}
+  .srcs{font-size:11.5px;color:var(--dim2);line-height:1.7;}
+  .srcs b{color:var(--dim);}
+  .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:14px 0;}
+  @media(max-width:820px){.flow{grid-template-columns:1fr 1fr;}}
+  .fstep{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:14px;}
+  .fstep .n{font-family:'Anton';color:var(--aqua);font-size:20px;}
+  .fstep .t{font-size:13px;font-weight:800;color:#fff;margin:6px 0 4px;}
+  .fstep .d{font-size:11.5px;color:var(--dim);}
+  .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:6px;background:rgba(79,182,204,.14);color:var(--aqua-br);margin:0 4px 6px 0;}
+  .honest{border-left:4px solid var(--amber);background:#181509;padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0;}
+  .honest .h{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+  .honest p{color:#e8dcc0;margin:0;}
+</style>
+</head>
+<body>
+
+<div class="gradbar"></div>
+<div class="topbar"><div class="wrap">
+  <div class="brand"><div class="logo">A</div><b>APEX<span>ACQ</span></b></div>
+  <div class="topnav">
+    <a href="#opp">Opportunity</a>
+    <a href="#buyer">Buyer</a>
+    <a href="#message">Message</a>
+    <a href="#marketing">Marketing</a>
+    <a href="#method">Method</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#engage">Engagement</a>
+  </div>
+</div></div>
+
+<!-- ===== HERO ===== -->
+<header class="hero"><div class="wrap">
+  <span class="kicker">Residential Growth Playbook · Prepared for Emerge Built</span>
+  <h1>Fill the factory line<br>with the <span class="aq">suite next door.</span></h1>
+  <p class="sub">You already build the best modular units in Western Canada. What you don't have yet is a machine that keeps the right buyers walking through the door to order them. This is that machine, start to finish. It's built so you could run it yourself. You'll want us to run it for you.</p>
+  <div class="who">
+    Prepared for <b>Greg Zemrau &amp; the Emerge team</b> · Three Hills, AB &amp; Richmond, BC &nbsp;·&nbsp; By <b>John Milne, Apex ACQ</b> &nbsp;·&nbsp; July 2026
+  </div>
+</div></header>
+
+<!-- ===== 01 OPPORTUNITY ===== -->
+<section id="opp"><div class="wrap">
+  <div class="sechead"><span class="secnum">01</span><h2>The opportunity</h2></div>
+  <p class="lede">The wind is at your back harder than it has ever been. Three things are happening at the same time: a housing shortage nobody can build their way out of by hand, a wave of law changes that made a second home legal on nearly every lot out west, and cheap government money to pay for it. Factory-built is the only answer that scales. That's you.</p>
+
+  <div class="statgrid">
+    <div class="bignum"><div class="v">4.8<small>M</small></div><div class="l">New homes Canada needs this decade to restore affordability, roughly double the current build pace<span class="ref">1</span></div></div>
+    <div class="bignum"><div class="v">~85<small>K</small></div><div class="l">AB + BC construction workers, about 23% of each trade workforce, retiring by 2033<span class="ref">3</span></div></div>
+    <div class="bignum"><div class="v">20-50<small>%</small></div><div class="l">Faster to finish with modular vs site-built, at around 20% lower cost and 80% less on-site waste<span class="ref">2</span></div></div>
+    <div class="bignum"><div class="v">$5.1<small>B</small></div><div class="l">Canadian modular market in 2024, already 7.5% of all construction; multi-family is the fastest-growing slice<span class="ref">4</span></div></div>
+  </div>
+
+  <div class="grid2" style="margin-top:20px;">
+    <div class="card">
+      <h3>The math doesn't work without you</h3>
+      <p>Canada has to roughly double its home-building pace, and CMHC says outright it can't be done "without a significantly larger and modernized workforce."<span class="ref">1</span> But nearly one in four tradespeople in Alberta and BC walks off the site permanently within about seven years.<span class="ref">3</span> You can't hammer your way out of this. The only lever that bends the curve is moving the labour indoors, into a factory, which is exactly what your 40-plus patents and your one-floor-of-units-a-day crane process already do.</p>
+    </div>
+    <div class="card">
+      <h3>The law just handed you a market</h3>
+      <p>BC's Bill 44 killed single-family-only zoning province-wide. Three to four units are now legal as-of-right on essentially every residential lot, up to six near transit.<span class="ref">5</span> Edmonton allows up to eight units on most low-density lots.<span class="ref">6</span> Overnight, hundreds of thousands of ordinary backyards became legal build sites. Most of the homeowners who own them still have no idea. That gap between "it's legal now" and "nobody told me" is the whole opportunity.</p>
+    </div>
+  </div>
+
+  <div class="honest">
+    <div class="h">Straight talk</div>
+    <p>This isn't a case for advertising your whole business. Your developer and multi-family capacity sells through relationships, procurement and Greg's network, not a Facebook ad, and I won't pretend otherwise. The residential line is the piece that paid acquisition wins, and it's the fastest cash in the building. That's where this playbook points. The bigger B2B pipeline is Phase 2, and I've laid out how we feed it too.</p>
+  </div>
+</div></div>
+
+<!-- ===== 02 THE WEDGE ===== -->
+<section id="wedge"><div class="wrap">
+  <div class="sechead"><span class="secnum">02</span><h2>The wedge</h2></div>
+  <p class="lede">The residential modular line is where we start, for three reasons: the buyer is reachable with ads, the regulation change is a timer that creates urgency for us, and every competitor in the market is asleep on the exact things that convert.</p>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="tag">Reachable</div>
+      <h4>They're online and they're searching</h4>
+      <p>Vancouver alone has built 7,000-plus laneway homes since 2009.<span class="ref">10</span> The homeowner researching a backyard suite Googles "cost to build a laneway house" and scrolls Instagram at night. Unlike your developer buyers, this one can be found and sold with paid media.</p>
+    </div>
+    <div class="card">
+      <div class="tag">Urgent</div>
+      <h4>The clock is real, not manufactured</h4>
+      <p>Calgary's blanket rezoning is set to be repealed on Aug 4, 2026, but applications filed before that date are grandfathered.<span class="ref">7</span> Calgary's suite incentive went to a waitlist in June 2026.<span class="ref">8</span> These are genuine "build now or miss it" levers we can point ads at without inventing anything.</p>
+    </div>
+    <div class="card">
+      <div class="tag">Uncontested</div>
+      <h4>The field left the door open</h4>
+      <p>The modular and ADU builders out west hide their pricing, offer no financing help, and never tell the rental-income story. The two brands that do the opposite are the two that are winning.<span class="ref">11</span> We copy what works and out-execute everyone who's coasting.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- ===== 03 THE BUYER ===== -->
+<section id="buyer"><div class="wrap">
+  <div class="sechead"><span class="secnum">03</span><h2>The buyer</h2></div>
+  <p class="lede">We're not selling to "homeowners." We're selling to four specific people, each with a different reason to build, each needing a different ad. Getting this right is 80% of why the campaign works. Here's who they are and what actually moves them.</p>
+
+  <div class="grid2">
+    <div class="card">
+      <h4>1. The caregiver</h4>
+      <p><b>"I want Mom close, but not under the same roof."</b> Multigenerational households are the fastest-growing household type in the country, up 21% since 2001.<span class="ref">9</span> This buyer is emotional, not price-shopping. Sell dignity, independence, and peace of mind. A suite in the backyard beats a care home.</p>
+    </div>
+    <div class="card">
+      <h4>2. The parent of an adult kid</h4>
+      <p><b>"My son can't afford to move out."</b> Roughly 2.5 million Canadians over 25 still live with their parents.<span class="ref">9</span> This buyer wants their kid launched and their home worth more. Sell a place for them to live now that becomes a rental later.</p>
+    </div>
+    <div class="card">
+      <h4>3. The income investor</h4>
+      <p><b>"I want the backyard to pay me."</b> A Vancouver laneway can rent for $2,000 to $3,200 a month, and a legal suite typically lifts the property value by a large share of what it cost to build.<span class="ref">12</span> Sell the payback math and the equity, hard numbers, calculator on the page.</p>
+    </div>
+    <div class="card">
+      <h4>4. The aspiring small developer</h4>
+      <p><b>"Bill 44 says I can put four units here."</b> Owns a lot, sees the new zoning, wants to build but has never done it. Sell certainty: fixed factory price, one crane day, no trade-shortage delays. This buyer can also become a reseller in their town, which feeds Phase 2.</p>
+    </div>
+  </div>
+
+  <div class="honest">
+    <div class="h">Where Alberta differs</div>
+    <p>Albertans don't type "laneway." They type "backyard suite," "garage suite," "garden suite." We buy every local synonym so we're not paying for the wrong province's language. And the cheap-money angle is huge here: Ottawa now lends up to $80,000 at 2% over 15 years to build a suite.<span class="ref">8</span> For most of these four people, "how do I pay for it" is the real objection, and almost nobody in the market is answering it.</p>
+  </div>
+</div></div>
+
+<!-- ===== 04 LANDSCAPE ===== -->
+<section id="landscape"><div class="wrap">
+  <div class="sechead"><span class="secnum">04</span><h2>The landscape</h2></div>
+  <p class="lede">I pulled apart how every modular and ADU builder out west markets themselves. The pattern is clear: they compete on product and neglect the funnel. Here's the field, and the seven open doors we walk through.</p>
+
+  <div class="grid2">
+    <div class="card">
+      <h4>Who's out there</h4>
+      <ul class="clean">
+        <li><b>ROC Modular</b> (S. Alberta) - your closest peer. Markets like a contractor: no pricing, thin galleries, "Contact Us." Beatable on the funnel.</li>
+        <li><b>Honomobo</b> (Edmonton) - the best-marketed player and the one to study. Shows prices openly, has a financing page, strong PR. This is the bar.<span class="ref">11</span></li>
+        <li><b>Smallworks / Lanefab</b> (Vancouver) - own the "laneway cost" content and SEO by publishing full price breakdowns.</li>
+        <li><b>Modworks</b> (Edmonton/Calgary) - closest AB ADU peer, and asleep: no pricing, no financing, no ROI story.</li>
+        <li><b>Stack Modular</b> - manufactures in Shanghai. Wide open to a "built in Alberta, no ocean freight, no tariff risk" attack.</li>
+        <li><b>NRB / ATCO</b> - the scale incumbent, but procurement-focused with no consumer funnel at all.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>The seven gaps we exploit</h4>
+      <ul class="clean">
+        <li><b>Pricing opacity</b> - everyone hides it; the two who publish, win. We publish a "starting from" and a calculator.</li>
+        <li><b>No financing guidance</b> - we own the $80K federal loan / HELOC / refi conversation.</li>
+        <li><b>No rental-income story</b> - we make the suite pay for itself on the page, with real payback math.</li>
+        <li><b>Decayed local SEO</b> - "garage suite builder Edmonton," "modular apartment Alberta" are under-defended.</li>
+        <li><b>"Built in Alberta" is unclaimed</b> - local steel, local jobs, no offshore risk. You own it.</li>
+        <li><b>No B2B lead magnets</b> - a developer "is your site modular-ready?" report captures pipeline nobody else asks for.</li>
+        <li><b>No configurators</b> - a pick-a-model, get-an-estimate tool would lead the category.</li>
+      </ul>
+    </div>
+  </div>
+  <p style="margin-top:14px;color:var(--dim);"><b style="color:#fff;">The takeaway:</b> the winners in this market win on transparency, content and financing, not on a better box. You already have the best box, plus a genuine "27 years, 40-plus patents, one floor a day, CSA-approved so the city doesn't re-inspect" story that none of them can match. We just have to say it louder and put a funnel under it.</p>
+</div></div>
+
+<!-- ===== 05 MESSAGE ===== -->
+<section id="message"><div class="wrap">
+  <div class="sechead"><span class="secnum">05</span><h2>M1 · The message</h2></div>
+  <p class="lede">This is the first of the three Ms every engine runs on: <b>Message, Marketing, Method</b>. Message is the words and the offer. Get this wrong and no amount of ad spend saves you. You said it yourself on our call: sell the outcome, not the factory. Nobody buys structural steel. They buy their mother living next door.</p>
+
+  <div class="grid2">
+    <div class="card">
+      <h4>The core reposition</h4>
+      <p>Away from "faster, greener, quieter construction" (true, but it's about you) and toward the outcome the buyer pictures: <b>"A second home in your backyard. Built in our factory, craned in, livable in weeks not years."</b> We keep your proof points (27 years, 40-plus patents, CSA-approved, half the time of traditional build) as the reasons-to-believe underneath the promise, never as the headline.</p>
+    </div>
+    <div class="card">
+      <h4>The offer that converts</h4>
+      <p>A high-consideration $200K-plus decision stalls on uncertainty. We kill it with a concrete, low-friction first step: <b>"Find out what your lot qualifies for and what your suite would cost, free, in 3 minutes."</b> That's the lead magnet, the ad promise, and the landing-page headline, all matched. No "request a consultation." A specific, valuable, instant answer.</p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:18px;">
+    <div class="ck">The one-page story</div>
+    <p style="margin:6px 0 0;color:#dfe7ec;">Your backyard is now legal to build on → most people don't know → here's what yours qualifies for → here's the suite → here's what it rents for and what it adds to your home → here's how to pay for it → book a call. Every ad, every page, every email tells one slice of that story. That's the Rule of One in action: one reader, one promise, one next step.</p>
+  </div>
+</div></div>
+
+<!-- ===== 06 MARKETING ===== -->
+<section id="marketing"><div class="wrap">
+  <div class="sechead"><span class="secnum">06</span><h2>M2 · The marketing</h2></div>
+  <p class="lede">The second M: how we get in front of the right people and make them raise a hand. Three channels, each with a job. We buy the demand that already exists, manufacture the demand that doesn't, and borrow trust from people who already have it.</p>
+
+  <div class="grid3" style="margin-bottom:8px;">
+    <div class="card">
+      <h4>1. Google Search + Map Pack</h4>
+      <div class="tag">Capture intent</div>
+      <p>The buyer who types "garage suite builder Calgary" is ready now. We own those searches and the local map pack. This is the lowest-funnel, highest-return dollar, and the field has half-abandoned it.<span class="ref">10</span></p>
+      <p style="font-size:13px;color:var(--dim);margin-top:8px;"><b>Budget to start:</b> $60-100/day, tight exact and phrase match, hard negative-keyword wall so we never pay for tire-kickers or the wrong province's terms.</p>
+    </div>
+    <div class="card">
+      <h4>2. Meta (Instagram + Facebook)</h4>
+      <div class="tag">Create demand</div>
+      <p>Most homeowners don't know their lot is now legal to build on. Meta is where we tell them. Visual before-and-afters, rental-income calculators, "a suite for your parents" creative, targeted at homeowners 40-plus with the four motivations. Home-improvement leads here typically run $25-$75.<span class="ref">13</span></p>
+      <p style="font-size:13px;color:var(--dim);margin-top:8px;"><b>Budget to start:</b> $50-80/day, one campaign, four ad sets mapped to the four buyers, creative refreshed off a quarterly factory + site shoot day.</p>
+    </div>
+    <div class="card">
+      <h4>3. Realtor &amp; broker referrals</h4>
+      <div class="tag">Borrow trust</div>
+      <p>Agents stand at the exact "your lot qualifies for a suite" moment. Established ADU builders pay up to $10,000 per closed agent referral.<span class="ref">14</span> We co-brand a "how to finance your backyard suite" kit and turn agents and mortgage brokers into a standing referral engine. Lowest cost per deal in the whole plan.</p>
+    </div>
+  </div>
+
+  <h3 style="margin:26px 0 10px;">The copy bank (starting angles)</h3>
+  <p style="color:var(--dim);max-width:800px;margin-bottom:14px;">These are the hooks we open with, one per buyer. Every line gets tested and every winner gets scaled. Final copy is voice-checked before a dollar goes behind it.</p>
+  <div class="grid2">
+    <div class="copybank">
+      <div class="h">For the caregiver &amp; the parent</div>
+      <div class="line"><span>Hook</span>Mom close by. Just not under the same roof.</div>
+      <div class="line"><span>Hook</span>Your kid can't afford to move out. Give them somewhere to live and add value to your home.</div>
+      <div class="line"><span>Hook</span>A second home in your backyard, built in our factory and craned in. Weeks, not years.</div>
+    </div>
+    <div class="copybank">
+      <div class="h">For the investor &amp; the small developer</div>
+      <div class="line"><span>Hook</span>Turn your backyard into a $2,000-a-month suite that pays for itself.</div>
+      <div class="line"><span>Hook</span>The government will lend you $80,000 at 2% to build a suite. Here's how.</div>
+      <div class="line"><span>Hook</span>Your lot is now legal for up to 4 homes. Most owners have no idea yet.</div>
+    </div>
+  </div>
+</div></div>
+
+<!-- ===== 07 METHOD ===== -->
+<section id="method"><div class="wrap">
+  <div class="sechead"><span class="secnum">07</span><h2>M3 · The method</h2></div>
+  <p class="lede">The third M, and the one most builders skip: the machine behind the click. A lead that isn't called in the first five minutes is a lead you paid for and lost. This is the system that catches every one, qualifies it, and hands your sales team only the people worth their time.</p>
+
+  <div class="flow">
+    <div class="fstep"><div class="n">01</div><div class="t">Ad</div><div class="d">Google or Meta, matched to one of the four buyers.</div></div>
+    <div class="fstep"><div class="n">02</div><div class="t">Lot-qualifier page</div><div class="d">"What can I build?" quiz + short VSL. Captures name, address, phone.</div></div>
+    <div class="fstep"><div class="n">03</div><div class="t">Speed-to-lead</div><div class="d">AI call inside 30 seconds to book them, exactly how Sarah booked our call.</div></div>
+    <div class="fstep"><div class="n">04</div><div class="t">Qualify</div><div class="d">Budget, timeline, lot, motivation scored before your closer ever picks up.</div></div>
+    <div class="fstep"><div class="n">05</div><div class="t">Booked</div><div class="d">Only real buyers land in your calendar. No-shows chased automatically.</div></div>
+  </div>
+
+  <div class="grid2" style="margin-top:8px;">
+    <div class="card">
+      <h4>What we build in your CRM</h4>
+      <ul class="clean">
+        <li>The lot-qualifier funnel and VSL landing page, message-matched to every ad.</li>
+        <li>30-second speed-to-lead: AI text and call the instant a form hits, so you never lose the 5-minute window.</li>
+        <li>Automated qualifying and lead scoring so your team only talks to people ready to build.</li>
+        <li>No-show recovery, long-term nurture, and a reviews engine so happy customers feed the next ten.</li>
+      </ul>
+      <p style="font-size:13px;color:var(--dim);margin-top:6px;">Built in GoHighLevel, which I run deep. It can sit alongside your HubSpot so your sales team keeps their process and just gets handed warmer people.</p>
+    </div>
+    <div class="card">
+      <h4>Why speed-to-lead is the whole game</h4>
+      <p>Most builders let a web lead sit in an inbox for hours. By then the homeowner has filled in three other forms. The buyer who gets a call back first, wins the job, not the best builder, the fastest one. We automate that first touch to under a minute, every time, day or night. This single piece routinely doubles the number of booked calls off the same ad spend.</p>
+      <p style="color:var(--dim);font-size:13px;">You already proved it works: an AI called and booked you into our conversation. That's the same engine, pointed at your buyers.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- ===== 08 TRACKING ===== -->
+<section id="tracking"><div class="wrap">
+  <div class="sechead"><span class="secnum">08</span><h2>Tracking &amp; the numbers</h2></div>
+  <p class="lede">We don't guess. Every dollar is traced from the click to the booked call to the signed contract, so you always know your real cost per booked job, not vanity clicks. And we hold ourselves to hard gates so nothing runs on hope.</p>
+
+  <div class="statgrid">
+    <div class="bignum"><div class="v">&lt;1<small>min</small></div><div class="l">Speed-to-lead target on every inbound, verified with a live test signal before we call anything "live"</div></div>
+    <div class="bignum"><div class="v">Day 14</div><div class="l">First kill-or-scale gate. If it isn't trending to target, we restructure. We don't "give it more time"</div></div>
+    <div class="bignum"><div class="v">CPBC</div><div class="l">Cost per booked call is the number we manage to, not impressions or clicks</div></div>
+    <div class="bignum"><div class="v">2x</div><div class="l">Payback floor. If the unit economics don't clear it, I tell you before we spend, not after</div></div>
+  </div>
+
+  <div class="card" style="margin-top:16px;">
+    <h4>What you'll see every week</h4>
+    <p>Spend, leads, cost per lead, booked calls, cost per booked call, and where every one came from, in one simple dashboard. No jargon. Phone-ringing numbers, not "impressions." If a channel isn't paying, we cut it. If one is, we pour into it. You'll never wonder what your money did.</p>
+  </div>
+</div></div>
+
+<!-- ===== 09 ROADMAP ===== -->
+<section id="roadmap"><div class="wrap">
+  <div class="sechead"><span class="secnum">09</span><h2>The first 60 days</h2></div>
+  <p class="lede">I tell clients 30 days to live and aim to beat it. Here's the week-by-week so you and Greg know exactly what happens and when. One avenue at a time, roughly 30 days per avenue, residential first.</p>
+
+  <ul class="tl">
+    <li><b>Week 1 · Foundation</b> Kickoff, access to the ad account, and the plan for a factory + site shoot day. We lock the offer, the four buyer angles, and the message. You and Greg decide what we're allowed to showcase.</li>
+    <li><b>Week 2 · Build the engine</b> Lot-qualifier funnel and VSL page, the CRM build, 30-second speed-to-lead, qualifying flow, no-show recovery, reviews engine. Tracking wired and tested end-to-end before anything goes live.</li>
+    <li><b>Weeks 3-4 · Go live</b> Ads on, traffic into the funnel, first booked calls landing in your calendar. Live within 30 days of getting your assets.</li>
+    <li><b>Weeks 5-8 · Test and sharpen</b> Four full weeks of real data to tune creative, targeting and the offer. Day-14 gate, then Day-30. This is inside your setup window, so you're not paying a monthly retainer while we dial it in.</li>
+  </ul>
+
+  <div class="honest">
+    <div class="h">What I need from you</div>
+    <p>Access to the ad account, one shoot day we help coordinate (once a quarter is plenty), and a fast handoff to your setter or closer once a lead is qualified. It's completely unfair to ask anyone to market a company they've been under-equipped to represent, so getting me good footage of the factory and finished units is the one thing that unlocks everything.</p>
+  </div>
+</div></div>
+
+<!-- ===== 10 EXPANSION ===== -->
+<section id="expansion"><div class="wrap">
+  <div class="sechead"><span class="secnum">10</span><h2>Phase 2 &amp; 3 · The expansion</h2></div>
+  <p class="lede">Once residential is printing booked calls, we open the bigger avenues. Same machine, different fuel. These aren't paid-ad plays, and I won't run them like one. They're built on content, positioning and partnerships.</p>
+
+  <div class="grid3">
+    <div class="card">
+      <h4>Phase 2 · Developer capacity</h4>
+      <p>Bill 44 turned every BC lot over 280m² into a potential four-unit modular order.<span class="ref">5</span> We build a "is your site modular-ready?" feasibility magnet, run LinkedIn and direct outreach to developers and GCs, and get you in front of the CHBA chapters and trade press. This fills the big factory slots.</p>
+    </div>
+    <div class="card">
+      <h4>Phase 3 · Reseller network</h4>
+      <p>Your idea, and a good one: local product experts by territory who sell your residential units in their town on an eat-what-you-kill basis, while you control the marketing and the brand. We build the recruiting funnel and the partner kit that makes it run.</p>
+    </div>
+    <div class="card">
+      <h4>The moat we build along the way</h4>
+      <p>Published pricing, a rental-ROI calculator, the "built in Alberta" story, and ownership of the local search and the Bill-44 narrative. By the time competitors wake up, you own the words the whole market searches.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- ===== 11 ENGAGEMENT ===== -->
+<section id="engage"><div class="wrap">
+  <div class="sechead"><span class="secnum">11</span><h2>How we work together</h2></div>
+  <p class="lede">Simple, and built so the risk sits with me, not you. One setup fee covers the build and the first 60 days. The monthly doesn't start until you're seeing a return. All figures in USD. Ad spend is separate and paid straight to the platforms.</p>
+
+  <div class="grid2">
+    <div class="card-l">
+      <div class="kicker" style="color:var(--aqua-d);">Setup · covers first 60 days</div>
+      <div style="font-family:'Anton';font-size:52px;line-height:1;color:var(--ink);margin:8px 0;">$10,000</div>
+      <p style="color:#41506a;">Full build plus your first 60 days. Live within 30. You don't start paying the monthly retainer until you're seeing a return on ad spend and you're happy we're performing.</p>
+    </div>
+    <div class="card">
+      <h4>Monthly retainer (starts after ROI)</h4>
+      <table class="dt">
+        <tr><td class="lead">$2,000 / mo</td><td class="sub">Starting tier, once you're seeing a return</td></tr>
+        <tr><td class="lead">$4,000 / mo</td><td class="sub">Once you're spending $10K / mo on ads</td></tr>
+        <tr><td class="lead">$5,000 / mo</td><td class="sub">Capped here at $25K+ / mo ad spend. Never higher.</td></tr>
+      </table>
+      <div class="callout" style="margin-top:14px;"><div class="ck">The guarantee</div><p style="margin:6px 0 0;color:#dfe7ec;">We keep working until you see results. No long-term retainer, no lock-in, leave any time. If we're not performing, we keep going for free until we are, or you walk.</p></div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin:40px 0 10px;">
+    <div class="display" style="font-size:40px;">Let's fill that <span class="aq">residential line.</span></div>
+    <p style="color:var(--dim);max-width:620px;margin:12px auto 0;">You build the best units in Western Canada. I'll keep the right people walking through the door to order them. Review it with Greg, sort the shoot day, and we go live inside 30 days.</p>
+    <p style="margin-top:18px;color:#fff;font-weight:800;">John Milne · Apex ACQ · john@apexacq.co</p>
+  </div>
+</div></div>
+
+<!-- ===== SOURCES ===== -->
+<section id="sources"><div class="wrap">
+  <div class="sechead"><span class="secnum">·</span><h2 style="font-size:26px;">Sources</h2></div>
+  <p class="srcs">
+    <b>1.</b> CMHC, up to 4.8M homes needed this decade to restore affordability (June 2025): cbc.ca/news/business/cmhc-affordability-homes-1.7565525 &nbsp;·&nbsp;
+    <b>2.</b> McKinsey, modular 20-50% faster / ~20% cheaper; WEF ~80% less on-site waste: mckinsey.com &amp; weforum.org &nbsp;·&nbsp;
+    <b>3.</b> BuildForce Canada, AB ~42,500 &amp; BC ~43,200 (~23%) construction retirements by 2033: buildforce.ca &nbsp;·&nbsp;
+    <b>4.</b> MBI / Billdr, Canadian modular market $5.1B (2024), 7.5% of construction, multi-family fastest at 7.4% CAGR: billdr.ai &amp; modular.org &nbsp;·&nbsp;
+    <b>5.</b> Province of BC, Bill 44 (SSMUH) 3-6 units as-of-right: www2.gov.bc.ca &nbsp;·&nbsp;
+    <b>6.</b> Edmonton Zoning Bylaw Renewal, up to 8 units as-of-right (Jan 2024): globalnews.ca &nbsp;·&nbsp;
+    <b>7.</b> Calgary blanket rezoning repeal Aug 4 2026, prior applications grandfathered: arcsurveys.ca / durabledecks.ca &nbsp;·&nbsp;
+    <b>8.</b> Federal Secondary Suite Loan up to $80K at 2% / 15yr; Calgary incentive waitlist Jun 2026: canadianmortgagetrends.com &amp; calgary.ca &nbsp;·&nbsp;
+    <b>9.</b> StatCan, multigenerational households 441,750 (2021), +21.2% since 2001; ~2.5M adults 25+ with parents: statcan.gc.ca &nbsp;·&nbsp;
+    <b>10.</b> City of Vancouver / DailyHive, 7,000+ laneway homes since 2009; permit times 32→13 weeks: dailyhive.com &nbsp;·&nbsp;
+    <b>11.</b> Competitive scan: Honomobo (honomobo.com), ROC Modular (rocmodular.com), Smallworks (smallworks.ca), Modworks (modworks.ca) &nbsp;·&nbsp;
+    <b>12.</b> Vancouver laneway rent $2,000-$3,200/mo &amp; value uplift: raincityproperties.com / ecohome.net &nbsp;·&nbsp;
+    <b>13.</b> Home-improvement Meta lead benchmark ~$25-$75 (industry): contractormarketingpros.net &nbsp;·&nbsp;
+    <b>14.</b> ADU builder agent-referral precedent up to $10K/closed deal: minimallivingconcepts.com
+  </p>
+  <p class="srcs" style="margin-top:14px;color:var(--dim2);">Market and regulatory figures are cited to public sources as of July 2026 and re-verified before any campaign launch. Company revenue and capacity figures are as provided by Emerge and to be confirmed together. Cost, rent and ROI ranges are market estimates, not a quote.</p>
+</div></div>
+
+<div class="foot"><div class="wrap">
+  <b>APEX ACQ</b> · Residential Growth Playbook for Emerge Built · July 2026<br>
+  <span class="fnote">Done-for-you growth for builders and contractors · john@apexacq.co</span>
+</div></div>
+
+</body>
+</html>

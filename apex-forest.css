@@ -1,0 +1,130 @@
+/* ===== APEX MORTGAGE-BROKER GTM FOREST — Dan-Martell-style system (Apex black/aqua) ===== */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+  --black:#0a0d10; --ink:#12161b; --panel:#12171d; --panel2:#171d24; --panelb:#1c232b;
+  --aqua:#4fb6cc; --aqua-br:#57c7df; --aqua-d:#2f8497; --navy:#2f4c73;
+  --paper:#ffffff; --mist:#eef4f6; --line:#232b33; --line2:#2b343d; --line-l:#d8e2e6;
+  --txt:#eef3f6; --dim:#9aa7b0; --dim2:#6f7c86; --soft:#8a949c;
+  --good:#2fcf7f; --warn:#e6b53d; --bad:#e5645c; --amber:#d9a441;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,'Segoe UI',Arial,sans-serif;background:var(--black);color:var(--txt);line-height:1.55;font-size:15px;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+
+/* DISPLAY TYPE — the Dan Martell signature */
+.display{font-family:'Anton','Arial Narrow',sans-serif;font-weight:400;text-transform:uppercase;line-height:.92;letter-spacing:.005em;}
+.aq{color:var(--aqua);}
+h1,h2,h3,h4{font-weight:800;letter-spacing:-.01em;line-height:1.12;}
+.kicker{font-family:'Inter';font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--aqua);}
+.mono{font-family:'SF Mono',ui-monospace,Menlo,Consolas,monospace;}
+.num{font-family:'Anton',sans-serif;letter-spacing:.01em;}
+
+/* MOCKUP BANNER (top) */
+.mockbar{background:#1a1710;border-bottom:1px solid #3a3116;color:#cdb886;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:9px 14px;}
+.gradbar{height:5px;background:linear-gradient(90deg,var(--aqua),var(--navy));}
+
+/* TOP NAV */
+.topbar{background:var(--black);border-bottom:1px solid #1a2027;position:sticky;top:0;z-index:50;}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.14em;font-size:13px;}
+.brand .logo{width:27px;height:27px;border:2px solid var(--aqua);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--aqua);font-size:13px;font-weight:800;}
+.brand b span{color:var(--aqua);}
+.topnav{display:flex;gap:20px;font-size:13px;font-weight:600;color:var(--dim);}
+.topnav a:hover{color:#fff;}
+.topnav a.active{color:var(--aqua);}
+
+/* PILL NAV TAGS */
+.pillnav{display:flex;flex-wrap:wrap;gap:10px;}
+.pilltag{border:1.5px solid var(--aqua-d);color:var(--aqua);border-radius:22px;padding:8px 16px;font-size:12.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;transition:.12s;}
+.pilltag:hover{background:var(--aqua);color:#04222a;}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:14px;padding:13px 22px;border-radius:9px;border:none;cursor:pointer;font-family:'Inter';}
+.btn-aqua{background:var(--aqua);color:#04222a;}
+.btn-ghost{background:transparent;border:1.5px solid var(--aqua-d);color:var(--aqua);}
+
+/* SECTIONS / CARDS */
+section{padding:42px 0;}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;}
+.card-l{background:var(--paper);border:1px solid var(--line-l);border-radius:14px;padding:22px;color:var(--ink);}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+
+/* PILLS / CHIPS */
+.pill{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:4px 11px;border-radius:20px;}
+.pill-aqua{background:rgba(79,182,204,.16);color:var(--aqua-br);}
+.pill-good{background:rgba(47,207,127,.16);color:var(--good);}
+.pill-warn{background:rgba(230,181,61,.16);color:var(--warn);}
+.pill-bad{background:rgba(229,100,92,.16);color:var(--bad);}
+.pill-dim{background:#20272e;color:var(--dim);}
+
+/* KPI STRIP (dashboard) */
+.kpirow{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel);}
+.kpi{padding:18px 20px;border-right:1px solid var(--line);}
+.kpi:last-child{border-right:none;}
+.kpi .kl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--dim2);}
+.kpi .kv{font-family:'Anton',sans-serif;font-size:34px;letter-spacing:.01em;margin-top:8px;line-height:1;}
+.kpi .kv small{font-size:20px;color:var(--aqua);}
+.kpi .kd{font-size:12px;margin-top:8px;color:var(--dim);}
+.kpi .kd b{color:var(--good);}
+@media(max-width:900px){.kpirow{grid-template-columns:1fr 1fr;}.kpi{border-bottom:1px solid var(--line);}}
+
+/* CHECKLIST ROW */
+.checkrow{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;padding:12px 20px;background:#0e1519;border:1px solid var(--line);border-radius:12px;font-size:13px;font-weight:600;}
+.checkrow .ck{color:var(--good);font-weight:800;}
+.checkrow .lbl{color:var(--dim2);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:11px;margin-right:6px;}
+
+/* DATA TABLE */
+table.dt{width:100%;border-collapse:collapse;font-size:13.5px;}
+table.dt th{text-align:left;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--dim2);padding:9px 12px;border-bottom:1px solid var(--line2);}
+table.dt td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:middle;}
+table.dt tr:last-child td{border-bottom:none;}
+table.dt .lead{font-weight:700;color:#fff;}
+table.dt .sub{color:var(--dim2);font-size:12px;}
+
+/* SOURCE / LEADERBOARD ROWS */
+.srow{display:flex;align-items:center;gap:12px;padding:12px 4px;border-bottom:1px solid var(--line);}
+.srow:last-child{border-bottom:none;}
+.srow .ic{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:14px;flex:none;}
+.srow .nm{flex:1;}
+.srow .nm b{color:#fff;}
+.srow .nm span{display:block;color:var(--dim2);font-size:12px;}
+.srow .val{font-family:'Anton';font-size:20px;}
+
+/* BAR CHART */
+.chart{display:flex;align-items:flex-end;gap:6px;height:180px;padding:14px;background:#0e1519;border:1px solid var(--line);border-radius:12px;}
+.bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:0;}
+.bar .seg-p{background:var(--aqua);}
+.bar .seg-o{background:var(--amber);}
+.bar .lab{font-size:9px;color:var(--dim2);text-align:center;margin-top:6px;}
+
+/* CALLOUT */
+.callout{border-left:4px solid var(--aqua);background:#0e1519;padding:14px 18px;border-radius:0 10px 10px 0;}
+.callout.warn{border-color:var(--warn);background:#181509;}
+.callout .ck{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--aqua);}
+.callout.warn .ck{color:var(--warn);}
+
+ul.clean{list-style:none;}
+ul.clean li{position:relative;padding-left:22px;margin-bottom:9px;}
+ul.clean li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;background:var(--aqua);border-radius:2px;}
+
+/* FORM (light card on dark) */
+.formcard{background:var(--paper);border-radius:16px;padding:22px;color:var(--ink);}
+.field{margin-bottom:12px;}
+.field label{display:block;font-size:12px;font-weight:800;letter-spacing:.03em;color:#41506a;margin-bottom:5px;text-transform:uppercase;}
+.field input,.field select,.field textarea{width:100%;padding:13px;border-radius:9px;border:1px solid #d5dde7;font-size:15px;font-family:'Inter';}
+
+.foot{background:var(--black);color:var(--dim2);font-size:12px;padding:24px 0;text-align:center;letter-spacing:.03em;border-top:1px solid #1a2027;}
+.foot b{color:#cfd7dc;}
+.foot .fnote{color:#4f5860;margin-top:6px;font-size:11px;}
+.watermark{position:fixed;bottom:14px;right:16px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--dim2);background:rgba(10,13,16,.8);border:1px solid var(--line);padding:5px 10px;border-radius:6px;z-index:60;}
+
+@media(max-width:820px){
+  .grid2,.grid3,.grid4{grid-template-columns:1fr;}
+  .topnav{display:none;}
+}
