@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suite ROI Calculator · Emerge Built Playbook · Apex ACQ</title>
+<link rel="stylesheet" href="apex-forest.css">
+<link rel="stylesheet" href="emerge.css">
+<style>
+  .calc{display:grid;grid-template-columns:0.9fr 1.1fr;gap:18px;align-items:start;}
+  @media(max-width:820px){.calc{grid-template-columns:1fr;}}
+  .cbox{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;}
+  .cbox label{display:block;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--dim);margin:16px 0 7px;}
+  .cbox label:first-of-type{margin-top:0;}
+  .cbox select,.cbox input[type=number]{width:100%;padding:13px;border-radius:9px;border:1px solid var(--line2);background:#0e1519;color:#fff;font-size:15px;font-family:'Inter';}
+  .cbox input[type=range]{width:100%;accent-color:var(--aqua);}
+  .rentval{font-family:'Anton';font-size:22px;color:var(--aqua);}
+  .out{background:var(--ink);border:1px solid var(--line);border-radius:14px;padding:8px 22px 18px;}
+  .orow{display:flex;justify-content:space-between;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--line);}
+  .orow:last-child{border-bottom:none;}
+  .orow .k{font-size:13.5px;color:var(--dim);max-width:60%;}
+  .orow .v{font-family:'Anton';font-size:26px;color:#fff;}
+  .orow .v small{font-size:15px;color:var(--aqua);}
+  .ohero{text-align:center;padding:20px 0 8px;border-bottom:1px solid var(--line);}
+  .ohero .lbl{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--aqua);}
+  .ohero .big{font-family:'Anton';font-size:44px;color:#fff;line-height:1;margin-top:8px;}
+  .disc{font-size:11px;color:var(--dim2);margin-top:14px;line-height:1.5;}
+</style>
+</head>
+<body>
+
+<div class="gradbar"></div>
+<div class="topbar"><div class="wrap">
+  <div class="brand"><div class="logo">A</div><b>APEX<span>ACQ</span></b></div>
+  <div class="topnav">
+    <a href="index.html">← Playbook</a>
+    <a href="funnel.html">Funnel</a>
+    <a href="swipe-kit.html">Swipe Kit</a>
+    <a href="sequences.html">Sequences</a>
+    <a href="calculator.html" class="active">Calculator</a>
+  </div>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <span class="kicker">Surface 05 · The Lead Magnet, Live</span>
+  <h1>What could your<br>backyard <span class="aq">actually earn?</span></h1>
+  <p class="sub">This is the tool that turns a curious homeowner into a lead. They answer two questions, see real numbers on their own situation, and want to talk. Play with it below, it's live. This is the kind of thing nobody else in your market has.</p>
+</div></header>
+
+<section><div class="wrap">
+  <div class="calc">
+    <div class="cbox">
+      <label for="city">Where's your property?</label>
+      <select id="city">
+        <option value="van">Vancouver / Lower Mainland, BC</option>
+        <option value="kel">Kelowna / Okanagan, BC</option>
+        <option value="cal">Calgary, AB</option>
+        <option value="edm" selected>Edmonton, AB</option>
+      </select>
+
+      <label for="type">What are you building?</label>
+      <select id="type">
+        <option value="laneway">Laneway / detached suite</option>
+        <option value="garage" selected>Garage suite</option>
+        <option value="garden">Garden suite</option>
+        <option value="multiplex">Duplex or fourplex unit</option>
+      </select>
+
+      <label for="rent">Expected monthly rent: <span class="rentval" id="rentval">$1,550</span></label>
+      <input type="range" id="rent" min="800" max="4000" step="50" value="1550">
+      <p class="disc" style="margin-top:8px;">Drag to match your area. We pre-fill a conservative market estimate. On a call we pin it to your exact street.</p>
+    </div>
+
+    <div class="out">
+      <div class="ohero">
+        <div class="lbl">Rough payback</div>
+        <div class="big" id="payback">--</div>
+      </div>
+      <div class="orow"><div class="k">Estimated all-in build cost</div><div class="v" id="cost">--</div></div>
+      <div class="orow"><div class="k">Rental income per year</div><div class="v" id="income">--</div></div>
+      <div class="orow"><div class="k">Value likely added to your home <span style="color:var(--dim2)">(60-80% of build)</span></div><div class="v" id="value">--</div></div>
+      <div class="orow"><div class="k">$80K federal loan payment <span style="color:var(--dim2)">(2% / 15 yrs)</span></div><div class="v" id="loan">--</div></div>
+      <div class="orow"><div class="k">Your rent covers the loan payment</div><div class="v" id="cover">--</div></div>
+      <p class="disc">Rough estimates for illustration, not a quote. Build costs and rents vary by lot, servicing and finish. The federal Secondary Suite Loan lends up to $80,000 at 2% over 15 years. Get your exact numbers on a 15-minute call.</p>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:26px;">
+    <a class="btn btn-aqua" href="index.html#engage">See what your lot qualifies for →</a>
+  </div>
+
+  <div class="honest" style="margin-top:30px;">
+    <div class="h">Why this wins</div>
+    <p>A homeowner who plays with this has already pictured the money. That's a warm lead the moment they hit "get my exact numbers." It captures the address, the rent expectation and the intent in one step, and feeds straight into the speed-to-lead engine in <a href="sequences.html" style="color:var(--amber);font-weight:700;">The Sequences</a>. No competitor in your market is running anything like it.</p>
+  </div>
+</div></div>
+
+<div class="foot"><div class="wrap">
+  <b>APEX ACQ</b> · Suite ROI Calculator · Emerge Built · <a href="index.html" style="color:var(--aqua);">← back to the Playbook</a><br>
+  <span class="fnote">Illustrative estimates. Real figures confirmed on a call.</span>
+</div></div>
+
+<script>
+  const COST = {
+    van:{laneway:[550000,750000],garage:[300000,450000],garden:[300000,450000],multiplex:[600000,900000]},
+    kel:{laneway:[350000,550000],garage:[200000,320000],garden:[200000,320000],multiplex:[450000,700000]},
+    cal:{laneway:[220000,330000],garage:[200000,300000],garden:[180000,290000],multiplex:[400000,650000]},
+    edm:{laneway:[200000,300000],garage:[175000,250000],garden:[150000,300000],multiplex:[380000,600000]}
+  };
+  const RENTDEF = {van:2600, kel:2100, cal:1650, edm:1550};
+  const fmt = n => '$' + Math.round(n).toLocaleString('en-CA');
+  const fmtk = n => '$' + Math.round(n/1000) + 'K';
+
+  function loanPayment(P){ const r=0.02/12, n=180; return P*r/(1-Math.pow(1+r,-n)); }
+
+  function calc(){
+    const city=document.getElementById('city').value;
+    const type=document.getElementById('type').value;
+    const rent=+document.getElementById('rent').value;
+    document.getElementById('rentval').textContent=fmt(rent);
+
+    const [lo,hi]=COST[city][type];
+    const mid=(lo+hi)/2;
+    const annual=rent*12;
+    const payback=mid/annual;
+    const loan=loanPayment(Math.min(80000,mid));
+    const cover=rent/loan;
+
+    document.getElementById('cost').innerHTML = fmtk(lo)+' <small>to</small> '+fmtk(hi);
+    document.getElementById('income').textContent = fmt(annual);
+    document.getElementById('value').innerHTML = fmtk(mid*0.6)+' <small>to</small> '+fmtk(mid*0.8);
+    document.getElementById('loan').innerHTML = fmt(loan)+'<small>/mo</small>';
+    document.getElementById('cover').innerHTML = cover.toFixed(1)+'<small>x over</small>';
+    document.getElementById('payback').innerHTML = payback.toFixed(1)+' <span style="font-size:20px;color:var(--aqua)">years</span>';
+  }
+
+  const citySel=document.getElementById('city'), rentEl=document.getElementById('rent');
+  citySel.addEventListener('change', ()=>{ rentEl.value=RENTDEF[citySel.value]; calc(); });
+  document.getElementById('type').addEventListener('change', calc);
+  rentEl.addEventListener('input', calc);
+  calc();
+</script>
+
+</body>
+</html>
